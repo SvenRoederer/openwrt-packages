@@ -28,7 +28,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/netdata
   SECTION:=admin
   CATEGORY:=Administration
-  DEPENDS:=+zlib
+  DEPENDS:=+zlib +libpthread
   TITLE:=Real-time performance monitoring tool
   URL:=http://netdata.firehol.org/
 endef
