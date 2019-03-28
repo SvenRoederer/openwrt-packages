@@ -50,6 +50,8 @@ start_service() {
 
 	procd_close_instance
 
+	# wait for charon to init
+	sleep 5
 	$SWANCTL --load-all
 }
 
